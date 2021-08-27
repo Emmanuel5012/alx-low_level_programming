@@ -1,43 +1,48 @@
 #include <stdio.h>
 
 /**
- *main - print a num pair from 00-99 but no repeats (00 01, 00 02, 00 03,...)
- *Return: Always 0 (Success)
+ * main - Prints number pair  between 00 to 99 with no repition.
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-int tens;
-int ones;
-int t;
-int o;
+int i, j, k, l, digit_1, digit_2;
 
-for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
+i = j = k = l = 48;
+while (l < 58)
 {
-for (ones = '0'; ones <= '9'; ones++)
+k = 48;
+while (k < 58)
 {
-for (t = tens; t <= '9'; t++) /*print second of pair*/
+j = 48;
+while (j < 58)
 {
-for (o = ones + 1; o <= '9'; o++)
+i = 48;
+while (i < 58)
 {
-putchar(tens);
-putchar(ones);
+digit_1 = (l * 10) + k;
+digit_2 = (j * 10) + i;
+if (digit_1 < digit_2)
+{
+putchar(l);
+putchar(k);
 putchar(' ');
-putchar(t);
-putchar(o);
-
-if (!((tens == '9' && ones == '8') &&
-(t == '9' && o == '9')))
-{
+putchar(j);
+putchar(i);
+if (l == 57 && k == 56 && j == 57 && i == 57)
+break;
 putchar(',');
 putchar(' ');
 }
+i++;
 }
-o = '0';
+j++;
 }
+k++;
 }
+l++;
 }
 putchar('\n');
-
 return (0);
 }
