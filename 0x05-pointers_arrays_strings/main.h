@@ -1,7 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void reser_to_98(int *n);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
 void print_rev(char *s);
 
 #endif
