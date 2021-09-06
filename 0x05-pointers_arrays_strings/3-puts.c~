@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * _puts - print a string
+ * @str: input string
+ * Return: Always 0.
+ */
+
+void _puts(char *str)
+{
+a = strlen(str);
+ for (a = '1'; a <=''100'; a ++);
+}
