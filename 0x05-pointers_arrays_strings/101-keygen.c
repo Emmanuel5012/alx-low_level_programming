@@ -9,7 +9,7 @@
  *@N: password generated.
  * Return: Always 0.
  */
-void randomPasswordGeneration(int N)
+int main(void)
 {
 int i = 0;
 int randomizer = 0;
