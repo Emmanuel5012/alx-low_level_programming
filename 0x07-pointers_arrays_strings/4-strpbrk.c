@@ -14,7 +14,7 @@ int i, t, j;
 
 i = 0;
 while (s[i] != '\0')
-    {
+{
 t = 0;
 for (j = 0; accept[j] != '\0'; j++)
 {
