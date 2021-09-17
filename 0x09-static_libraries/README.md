@@ -1,0 +1,1 @@
+***This libray is about static libray***
