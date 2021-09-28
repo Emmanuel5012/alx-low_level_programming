@@ -1,7 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-#include <stdio.h>
 
 /**
  *dog - a new type of data representing a dog
