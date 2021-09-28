@@ -3,10 +3,12 @@
 
 
 /**
- *struct dog - a new type of data representing a dog
- *@name: name of dog
- *@age: age of dog
- *@owner: owner's name
+ * struct dog - a dog's basic info
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
+ *
+ * Description: Longer description
  */
 
 struct dog
