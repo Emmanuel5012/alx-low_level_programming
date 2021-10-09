@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-size_t *nodes = head;
+size_t nodes = head;
 
 while(nodes != NULL){
 if(nodes->next == NULL){
@@ -21,4 +21,5 @@ printf("%d, ", nodes->value);
 }
 nodes = nodes->next;
 }
+return (nodes);
 }
